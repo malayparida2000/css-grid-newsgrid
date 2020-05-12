@@ -1,0 +1,244 @@
+:root {
+  --main-bg-color: #f3f3f3;
+  --primary-color: #c72727;
+}
+
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Common Body Style */
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.4;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  margin: auto;
+  max-width: 1100px;
+  height: 100%;
+  padding: 30px;
+}
+
+.article {
+  padding: 10px;
+  background-color: #fff;
+}
+.article-heading {
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: "Staatliches", cursive;
+}
+.article-brief-text {
+  padding: 10px;
+}
+.article-brief {
+  padding: 10px;
+}
+.article p {
+  padding: 10px;
+}
+.category-name {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 5px;
+  margin: 0px 10px;
+  border-radius: 10px;
+}
+.sports .category-name {
+  background-color: #f99500;
+}
+.entertainment .category-name {
+  background-color: #966bbe;
+}
+.technology .category-name {
+  background-color: #099cff;
+}
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+}
+/* TopBar */
+#main-header .container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#main-header .container img {
+  width: 180px;
+}
+#main-header .container .logo {
+  justify-self: start;
+}
+#main-header .container .social-icons {
+  justify-self: center;
+}
+
+#main-header .container .social-icons a {
+  color: #222;
+  opacity: 0.9;
+  padding: 5px;
+}
+
+#main-header .container .navigation {
+  justify-self: end;
+}
+#main-header .container .navigation a {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+#main-header .container .navigation a:hover,
+.current-page {
+  color: #f3f3f3;
+  background-color: var(--primary-color);
+}
+
+/* Showcase Content */
+
+#showcase {
+  height: 60vh;
+  color: #f3f3f3;
+  background: url("../img/featured.jpg") no-repeat center center / cover;
+}
+#showcase > div {
+  height: 100%;
+  width: 100%;
+  background: rgba(53, 53, 52, 0.6);
+}
+#showcase .container {
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+#showcase .article-heading {
+  font-size: 30px;
+}
+#showcase .btn {
+  margin: 10px 10px;
+  color: #fff;
+}
+
+/* Editor Picks */
+
+#editor-picks .article-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+#editor-picks .article-container #article-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1 / span 2;
+  align-items: center;
+}
+#editor-picks .article-container #article-7 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 2 / span 2;
+  align-items: center;
+}
+#article-2 {
+  background-color: #333;
+  color: #fff;
+}
+#article-2 .article-heading {
+  color: #fff;
+}
+.article-container > *:nth-child(6) {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+#article-6 .article-heading {
+  color: #fff;
+}
+
+/* Footer */
+#main-footer {
+  background-color: #333;
+}
+#main-footer #footer-content {
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  align-items: flex-start;
+}
+#main-footer #footer-content .article-heading {
+  padding-top: 0px;
+}
+#main-footer #footer-content p {
+  padding: 10px;
+}
+#main-footer #footer-content > :nth-child(2) p {
+  padding-top: 0px;
+}
+#main-footer #footer-content > :nth-child(3) a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+  border-bottom: dotted 1px #cacaca;
+}
+#main-footer #footer-content > :nth-child(3) a:hover {
+  color: var(--primary-color);
+}
+#main-footer #footer-content > :nth-child(2) input {
+  width: 90%;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+}
+#main-footer #footer-content > :nth-child(2) .btn:hover {
+  cursor: pointer;
+}
+#main-footer #footer-text {
+  background-color: #555;
+  padding: 10px 30px;
+  color: #fff;
+  text-align: center;
+}
+#main-footer #footer-content > :nth-child(4) a {
+  margin: 10px;
+  background-color: #f99500;
+}
+#main-footer #footer-content > :nth-child(4) a:hover {
+  opacity: 0.9;
+}
